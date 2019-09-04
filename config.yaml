@@ -29,7 +29,7 @@ optimizer: 'Adam'
 learningRate: 0.01
 iterations: 20
 
-segmentLength: 10
+segmentLength: 6
 
 train: 1
 modelLoc: '/home/aih04/LID3/Models/'
