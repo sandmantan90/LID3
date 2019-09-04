@@ -1,0 +1,39 @@
+trainFile: "/home/aih04/LID3/trainInput.txt"
+trainDir: "/home/aih04/dataset/RealData/"
+testFile: "/home/aih04/LID3/testInput.txt"
+testDir: "/home/aih04/dataset/RealData/"
+
+cuda: 1
+
+batchSize: 64
+valBatchSize: 64
+numWorkers: 4
+
+inShape: [1,129,501]
+outClasses: 5
+labelNos: [0,1,2,3,4]
+labelNames: ['HIN','MAR','TEL','TAM','GUJ']
+rnnHiddenSize: 256
+rnnLayers: 2
+
+fcHiddenSzie: 256
+fcLayers: 2
+cnnActivation: 'relu'
+linearActivation: 'tanh'
+
+cnnDrop: 0.1
+linearDrop: 0.1
+lstmDrop: 0.1
+
+optimizer: 'Adam'
+learningRate: 0.01
+iterations: 20
+
+segmentLength: 10
+
+train: 1
+modelLoc: '/home/aih04/LID3/Models/'
+test: 1
+recTest: 0
+
+runName: 'Hyper2'
